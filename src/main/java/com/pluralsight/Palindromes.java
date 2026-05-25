@@ -14,6 +14,14 @@ public class Palindromes {
                 //add logic for 2 numbers three digits
                 float product = i * j;
 
+                //convert to string regular way forward
+                String original = String.valueOf(product);
+
+                //convert to string backward way
+                String reverse = new StringBuilder(original).reverse().toString();
+
+
+
 
 
             }
