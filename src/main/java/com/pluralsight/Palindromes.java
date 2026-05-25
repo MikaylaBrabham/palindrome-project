@@ -1,7 +1,12 @@
 package com.pluralsight;
 
+import java.util.Scanner;
+
 public class Palindromes {
     public static void main(String[] args) {
+
+        //add scanner
+        Scanner myScanner = new Scanner(System.in);
 
         //add initial value
         float palindromes = 0;
@@ -20,14 +25,18 @@ public class Palindromes {
                 //convert to string backward way
                 String reverse = new StringBuilder(original).reverse().toString();
 
+                if(original.equals(reverse)) {
 
+                    if (product > palindromes) {
+                        palindromes = product;
+                    }
+                }
 
 
 
             }
         }
-
-
+        System.out.println("The largest palindrome is " + palindromes);
     }
 
 }
